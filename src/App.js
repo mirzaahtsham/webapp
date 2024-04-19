@@ -1,14 +1,17 @@
 // import logo from './logo.svg';
 import './App.css';
+import About from './components/About';
 import Home from './components/Home';
-import Header from './components/header';
+import SocialLinks from './components/SocialLinks';
 import NavBar from './components/nav';
 function App() {
   return (
    <>
-   {/* <Header /> */}
    <NavBar />
    <Home />
+   <About />
+
+   <SocialLinks />
    </> 
   );
 }
