@@ -128,60 +128,6 @@ import GMB from "../assets/GMB.png";
                 style: 'shadow-sky-600',
             },
         ];
-            // {
-            //     id: 9,
-            //     src: Shopify,
-            //     title: 'Shopify',
-            //     style: 'shadow-green-400',
-            // },
-            // {
-            //     id: 10,
-            //     src: wordpress,
-            //     title: 'Wordpress',
-            //     style: 'shadow-black',
-            // },
-            // {
-            //     id: 11,
-            //     src: Wix,
-            //     title: 'Wix',
-            //     style: 'shadow-Yellow-300',
-            // },
-            // {
-            //     id: 12,
-            //     src: blogger,
-            //     title: 'Blogger',
-            //     style: 'shadow-orange-700',
-            // },
-            // {
-            //     id: 13,
-            //     src: Doc,
-            //     title: 'Google Doc',
-            //     style: 'shadow-sky-500',
-            // },
-            // {
-            //     id: 14,
-            //     src: PPT,
-            //     title: 'Google PPT',
-            //     style: 'shadow-orange-800',
-            // },
-            // {
-            //     id: 15,
-            //     src: Sheet,
-            //     title: 'Google Sheet',
-            //     style: 'shadow-green-500',
-            // },
-            // {
-            //     id: 16,
-            //     src: Form,
-            //     title: 'Google Form',
-            //     style: 'shadow-purple-500',
-            // },
-            // {
-            //     id: 17,
-            //     src: GMB,
-            //     title: 'Google Profile',
-            //     style: 'shadow-sky-600',
-            // },
         
 
   return (

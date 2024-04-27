@@ -59,7 +59,7 @@ const Home = () => {
                         </button>
                     </div>
                 </div>
-                <div className="relative">
+                <div className="md:w-1/2 relative flex justify-center items-center">
                     <img src={heroimage} alt="My Profile" className="rounded-2xl mx-auto w-2/3 md:w-full" />
                     <div className="absolute bottom-0 left-0 right-0 flex justify-center">
                         <div className="bg-gradient-to-br from-cyan-500 to-blue-500 shadow-lg rounded-lg p-4 flex justify-center items-center mx-6 -mb-10">
@@ -68,8 +68,7 @@ const Home = () => {
                                     key={id}
                                     className={`text-gray-300 mx-2 transition duration-300 ease-in-out transform hover:text-white ${
                                         index !== links.length - 1 ? 'border-r border-gray-400 pr-2' : ''
-                                    }`}
-                                >
+                                    }`}>
                                     <button onClick={onClick} className="flex items-center space-x-1">
                                         <span>{child}</span>
                                     </button>
