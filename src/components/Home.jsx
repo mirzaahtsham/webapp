@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+import Typed from 'typed.js'; // Import Typed.js library
 import heroimage from '../assets/Mirza-Ahtsham-Profile-Image.png';
 import { MdKeyboardArrowRight } from 'react-icons/md';
 import { FaInstagram, FaYoutube, FaPinterest, FaWhatsapp } from 'react-icons/fa';
@@ -40,14 +41,34 @@ const Home = () => {
         },
     ];
 
+
+        // Use useRef to reference the typed element
+        const typedRef = useRef(null);
+
+        useEffect(() => {
+            // Initialize Typed.js when component mounts
+            const typed = new Typed(typedRef.current, {
+                strings: ['Frontend Developer', 'WordPress Designer', 'Shopify Partner', 'WIX Partner'],
+                typeSpeed: 50,
+                backSpeed: 60,
+                loop: true,
+                startDelay: 1000, // Delay before typing starts
+            });
+    
+            // Cleanup Typed.js on component unmount
+            return () => {
+                typed.destroy();
+            };
+        }, []);
+
     return (
-        <div name="home" className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800">
-            <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row text-white">
-                <div className="flex flex-col justify-center h-full">
-                    <h2 className="text-4xl sm:text-7xl font-bold text-white">I'm Full Stack Developer</h2>
+        <div name="home" className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 pt-20">
+            <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-2 md:flex-row text-white">
+                <div className="flex flex-col justify-center h-full md:w-2/3">
+                    <h2 className="text-4xl sm:text-7xl font-normal text-white">I'm&nbsp;<br></br><span ref={typedRef} className="text-3xl sm:text-7xl font-bold"></span></h2>
                     <p className="text-gray-500 py-4 max-w-md">
                         I am a well-experienced person with strong expertise in Javascript, React and Tailwind CSS. I
-                        have 7 Years of Experience Building Website Using Wordpress, Shopify, Wix ETC CMS. I love to
+                        have 7 Years of Experience Building Website Using Wordpress, Shopify, Wix, Blogger CMS. I love to
                         work on Web Application Using React, Tailwind CSS, Node JS and Next JS.
                     </p>
                     <div>
@@ -59,10 +80,10 @@ const Home = () => {
                         </button>
                     </div>
                 </div>
-                <div className="md:w-1/2 relative flex justify-center items-center">
+                <div className="flex flex-col items-center justify-center h-full md:w-1/3">
                     <img src={heroimage} alt="My Profile" className="rounded-2xl mx-auto w-2/3 md:w-full" />
-                    <div className="absolute bottom-0 left-0 right-0 flex justify-center">
-                        <div className="bg-gradient-to-br from-cyan-500 to-blue-500 shadow-lg rounded-lg p-4 flex justify-center items-center mx-6 -mb-10">
+                    <div className="-mt-6 flex justify-center">
+                        <div className="bg-gradient-to-br from-cyan-500 to-blue-500 shadow-lg rounded-lg p-4 flex justify-center items-center">
                             {links.map(({ id, child, onClick }, index) => (
                                 <div
                                     key={id}
