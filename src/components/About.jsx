@@ -11,11 +11,17 @@ const About = () => {
             </p>
           </div>
           <p className="text-xl mt-20">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique velit possimus, corporis dolorem deserunt amet earum sapiente perspiciatis. Beatae exercitationem molestiae natus atque fugit possimus voluptatum nam totam nesciunt repellendus cupiditate ipsa a consequuntur quas, reprehenderit ipsum dicta quibusdam nobis omnis illo harum neque iure. Veniam iste iure consectetur suscipit?
+          Welcome! Are you seeking a seasoned Website Developer and Designer for your digital endeavors? Look no further – Website Design Wala is at your service! With a wealth of experience, I specialize in crafting captivating user experiences through UX design portfolios, customized WordPress themes, and content optimization.
+
+          In addition to my prowess in frontend development, encompassing CSS3, HTML5, JavaScript, and Tailwind CSS, I possess a keen understanding of digital marketing principles. My expertise extends to designing and developing various websites, including those for digital marketing, travel and tours, personal portfolios, medical companies, e-commerce stores, and real estate ventures.
           </p>
           <br />
           <p className="text-xl">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi dolor odio quaerat eaque velit nam sed, soluta architecto omnis expedita corporis, officiis a accusamus laudantium? Reiciendis id esse soluta illum deserunt nisi nostrum minus fuga dicta veritatis natus repudiandae, totam, cumque molestias eum nesciunt excepturi? Eaque harum aliquid omnis nobis?
+          My proficiency extends beyond website development – I have a strong command of graphic design tools like Photoshop, Illustrator, and Canva, allowing me to create visually stunning assets. Moreover, I excel in video editing using Camtasia Software and Canva's online tools, enhancing multimedia content to engage audiences effectively.
+
+          As a passionate content creator, I leverage my blogging hobby to empower skilled individuals worldwide. Through insightful articles and engaging videos, I share experiences and ideas, fostering a community of learning and growth.
+
+          Let's collaborate to elevate your digital presence and bring your vision to life with creativity and precision.
           </p>
       </div>
     </div>
