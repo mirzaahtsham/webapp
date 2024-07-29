@@ -32,6 +32,7 @@ import WixPartner from "../assets/Wix-Partner.png";
 import FiverrAffiliate from "../assets/Fiverr-Affiliate.png";
 import Themeforest from "../assets/themeforest.png";
 import Namecheap from "../assets/Namecheap.png";
+// import Canva from "../assets/Canva.png";
 
 
     const Experience = () => {
@@ -238,6 +239,33 @@ import Namecheap from "../assets/Namecheap.png";
             //     style: 'shadow-orange-400',
             // },
         ];
+            const GraphicDesign = [
+                {
+                    id: 30,
+                    src: PS,
+                    title: 'Photoshop',
+                    style: 'shadow-blue-900',
+                },
+                {
+                    id: 31,
+                    src: AI,
+                    title: 'Illustrator',
+                    style: 'shadow-orange-600',
+                },
+                // {
+                //     id: 32,
+                //     src: Canva,
+                //     title: 'Canva App',
+                //     style: 'shadow-yellow-300',
+                // },
+                {
+                    id: 33,
+                    src: Camtesia,
+                    title: 'Camtesia Video Editing Tool',
+                    style: 'shadow-green-700',
+                },
+                    
+        ];
 
   return (
     <div name="experience" className="bg-gradient-to-b from-gray-800 to-black w-full min-h-screen">
@@ -265,6 +293,22 @@ import Namecheap from "../assets/Namecheap.png";
 
                 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 text-center py-8 px-12 sm:px-0">
                     {cms.map(({ id, src, title, style }) => (
+                        <div key={id} className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}>
+                            <img src={src} alt="" className="w-20 mx-auto" />
+                            <p className="mt-4">{title}</p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+            <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
+                <div>
+                    <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">Graphic Desiging & Video Editing</p>
+                    <p className="py-6">These are Softwares. I've Experties in</p>
+                </div>
+
+                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 text-center py-8 px-12 sm:px-0">
+                    {GraphicDesign.map(({ id, src, title, style }) => (
                         <div key={id} className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}>
                             <img src={src} alt="" className="w-20 mx-auto" />
                             <p className="mt-4">{title}</p>
