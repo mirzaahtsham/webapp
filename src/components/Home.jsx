@@ -5,6 +5,7 @@ import { MdKeyboardArrowRight } from 'react-icons/md';
 import { FaInstagram, FaYoutube, FaPinterest, FaWhatsapp } from 'react-icons/fa';
 import { SiUdemy } from 'react-icons/si';
 import { SiLinktree } from 'react-icons/si';
+import { Link } from 'react-scroll';
 
 const Home = () => {
     const links = [
@@ -72,12 +73,12 @@ const Home = () => {
                         work on Web Application Using React, Tailwind CSS, Node JS and Next JS.
                     </p>
                     <div>
-                        <button className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">
+                        <Link to="portfolio" smooth duration={500} className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">
                             portfolio
                             <span className="group-hover:rotate-90 duration-300">
                                 <MdKeyboardArrowRight size={25} className="ml-1" />
                             </span>
-                        </button>
+                        </Link>
                     </div>
                 </div>
                 <div className="flex flex-col items-center justify-center h-full md:w-1/3">

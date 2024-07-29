@@ -11,13 +11,14 @@ const Contact = () => {
             </div>
 
             <div>
-                <form action ="" method="get" className=' flex flex-col w-full md:w-1/2'>
+                <form action ="https://getform.io/f/agdyvdjb" method="POST" className=' flex flex-col w-full md:w-1/2'>
                     <input 
                     type="text" name='name' placeholder='Enter Your Full Name' className='p-2 bg-transparent border-2 rounded-md text-white focus:outline-none' />
                     <input 
                     type="text" name='email' placeholder='Enter Your Email' className='my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none' />
                     <textarea name="message" rows="10" placeholder='Please Write Your Problem' className='p-2 bg-transparent border-2 rounded-md text-white focus:outline-none'></textarea>
-                    <button className='text-white bggradient to b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300'></button>
+                    
+                    <button className='text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300'>Let's Talk</button>
                 </form>
             </div>
         </div>

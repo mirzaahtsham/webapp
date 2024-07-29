@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 // import React from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-
+import { Link } from "react-scroll";
 const NavBar = () =>  {
   
   const [nav, setNav] = useState(false);
@@ -13,7 +13,7 @@ const NavBar = () =>  {
       },
       {
         id: 2,
-        link: 'about'
+        link: 'About'
       },
       {
         id: 3,
@@ -25,7 +25,7 @@ const NavBar = () =>  {
       },
       {
         id: 5,
-        link: 'contact'
+        link: 'Contact'
       },
     ];
 
@@ -38,7 +38,13 @@ const NavBar = () =>  {
        <ul className="hidden md:flex">
 
         {links.map(({ id, link }) => (
-          <li key={id} className="px-4 cursor-pointer capitalize font-medium text-gery-500 hover:scale-105 duration-200">{link}</li>
+          <li key={id} 
+          className="px-4 cursor-pointer capitalize font-medium text-gery-500 hover:scale-105 duration-200"
+          >
+             <Link to={link} smooth duration={500}>
+              {link}
+            </Link>
+            </li>
         ))}
 
         
@@ -51,9 +57,21 @@ const NavBar = () =>  {
 
           {nav && (
 
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-cyan-500 to-blue-500 text-[#531011]">
+        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-cyan-500 to-blue-500 text-[#531011]"
+        >
           {links.map(({ id, link }) => (
-            <li key={id} className="px-4 cursor-pointer capitalize py-6 text-4xl w-full text-center hover:text-white duration-200">{link}</li>
+            <li key={id} 
+            className="px-4 cursor-pointer capitalize py-6 text-4xl w-full text-center hover:text-white duration-200"
+            >
+               <Link 
+               onClick={() => setNav(!nav)} 
+               to={link} 
+               smooth 
+               duration={500}
+               >
+              {link}
+            </Link>
+              </li>
 
           ))}
            </ul>
