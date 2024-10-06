@@ -3,6 +3,7 @@
   "name": "webapp",
   "version": "0.1.0",
   "private": false,
+  "packageManager": "npm@10.8.1",
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
